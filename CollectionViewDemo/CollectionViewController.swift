@@ -10,7 +10,7 @@ import UIKit
 
 class CollectionViewController: UICollectionViewController {
   
-    @IBAction func addButtonTapped(_ sender: AnyObject) {
+    @IBAction func addButtonTapped(_ sender: Any) {
         let item = DataItem(title: "New Item", kind: .Animal, imageName: "images/default.jpeg")
         let index = allItems[0].count
         allItems[0].append(item)
